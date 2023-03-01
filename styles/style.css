@@ -1,0 +1,162 @@
+    html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgb(219, 219, 219);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+header {
+    height: 14vh;
+    background-color: #FFF159;
+    border-radius: 1vh;
+}
+
+.searchBar,
+nav {
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    border-bottom: 0.2vh solid black;
+    border-top: 0.2vh solid black;
+}
+
+.navOptions {
+    border-radius: 0.5vh;
+    text-decoration: none;
+    color: rgb(110, 110, 110);
+    margin: 2vw;
+}
+
+.navOptions:hover {
+    color: black;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    width: 80vw;
+    height: 15vh;
+    margin-top: 4vh;
+    margin-left: 10vw;
+    border-radius: 1vh;
+}
+
+.Offers,
+.firstOffer {
+    height: 15vh;
+}
+
+.offerTitle {
+    margin-top: 4vh;
+    margin-right: 3vh;
+}
+
+.firstOffer {
+    border-right: 0.3vh solid black;
+    padding: 1vh;
+}
+
+@media (max-width: 500px) {
+    .benefits {
+        display: none;
+    }
+}
+
+.marketItems {
+    margin-top: 3vh;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row: 20vh 20vh 20vh;
+    justify-content: center;
+    margin-left: 5vw;
+
+}
+
+.marketItem>img {
+    width: 15vw;
+    height: 350px;
+}
+
+.marketItem {
+    height: 70%;
+    margin-left: 2vw;
+    margin-bottom: 1vw;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 1.5vh;
+}
+
+.marketItem:hover {
+    height: 100%;
+    margin-bottom: 1vw;
+    padding: 0.5%;
+    transition-duration: 0.3s;
+    -webkit-box-shadow: 0px 0px 49px 1px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: 0px 0px 49px 1px rgba(0, 0, 0, 0.62);
+    box-shadow: 0px 0px 49px 1px rgba(0, 0, 0, 0.62);
+}
+
+.linha {
+    width: 15vw;
+    border: 0.1vw solid black;
+}
+
+.oldPrice {
+    text-decoration: line-through;
+    color: rgb(255, 60, 60);
+}
+
+.newPrice {
+    color: limegreen;
+    font-weight: bold;
+}
+
+select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45vw;
+    margin-top: 3vh;
+}
